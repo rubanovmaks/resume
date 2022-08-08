@@ -5,85 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="maksim, cv, resume">
-    <meta name="description" content="Это сайт - резюме Максима Рубанова">
+    <meta name="description" content="Это сайт-резюме Максима Рубанова">
     <title>Maksim Resume</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <img src="avatar.jpg" width="150" alt="Фото">
-    
-    <h1>Максим Рубанов</h1>
 
-    <p>Я ученик <strong>школы №20</strong> и мне 14 лет. Живу в <strong>пгт.Прогресс</strong></p>
+<div class="container">
 
-    <p>Я люблю <em>программировать, заниматься спортом, читать книги</em></p>
+        <div class="info">
+        <img src="avatar.jpg" alt="Фото" class="avatar">
+        
 
-<h4>Список социальных сетей:</h4>
+        <div class="info-text">
+        <h1>Максим Рубанов</h1>
 
-<a href="https://www.youtube.com/channel/UCkk-BkRyma1socoSipY3onw" target="_blank">Youtube</a>
-|
-<a href="https://t.me/maxenter" target="_blank">Telegram</a>
-|
-<a href="https://vt.tiktok.com/ZSRdhJ6kK/" target="_blank">TikTok</a>
+        <p>Я ученик <strong>школы №20</strong> и мне 14 лет. Живу в <strong>пгт.Прогресс</strong></p>
 
-<h2>Мои хобби</h2>
-    
-    <ol>
-    <li>Программирование</li>
-    <li>Wrestling</li>
-    <li>Путешествия</li>
-    <li>Бег</li>
-</ol>
+        <p>Я люблю <em>программировать, заниматься спортом, читать книги</em></p>
 
+    <h4>Список социальных сетей:</h4>
+
+    <a href="https://www.youtube.com/channel/UCkk-BkRyma1socoSipY3onw" target="_blank">Youtube</a>
+    |
+    <a href="https://t.me/maxenter" target="_blank">Telegram</a>
+    |
+    <a href="https://vt.tiktok.com/ZSRdhJ6kK/" target="_blank">TikTok</a>
+    </div>
+</div>
+
+<div class="card bg-green">
+        <h2>Мои хобби</h2>
+
+    <ul>
+        <li>Программирование</li>
+        <li>Wrestling</li>
+        <li>Путешествия</li>
+        <li>Бег</li>
+    </ul>
+    </div>
+
+        <div class="card bg-red">
     <h2>Опыт работы</h2>
-    
-<table>
-  <thead>
-    <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-  </thead>  
-<tbody>
-    <tr>
-        <td>Авито</td>
-        <td>Junior Frontend Developer</td>
-        <td>2015-2017</td>
-    </tr>
-    <tr>
-        <td>Сбер</td>
-        <td>Team Lead</td>
-        <td>2017 - сейчас</td>
-    </tr>
-    <tr>
-        <td>Youtube</td>
-        <td>Blogger</td>
-        <td>2018 - сейчас</td>
-    </tr>
-</tbody>
-</table>
 
-<h2>Связаться со мной</h2>
-
-<form>
-
-    <div>
-        <label for="text">Ваше имя:</label>
-        <input type="text" id="text" placeholder="Максим">
+    <div class="table">
+    <table>
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+        </tr>
+    </thead>  
+    <tbody>
+        <tr>
+            <td>Авито</td>
+            <td>Junior Frontend</td>
+            <td>2015-2017</td>
+        </tr>
+        <tr>
+            <td>Сбер</td>
+            <td>Team Lead</td>
+            <td>2017 - сейчас</td>
+        </tr>
+        <tr>
+            <td>Youtube</td>
+            <td>Blogger</td>
+            <td>2018 - сейчас</td>
+        </tr>
+    </tbody>
+    </table>
     </div>
-
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите почту">
     </div>
+ 
 
-    <div>
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+    <div class="form-row">
+
+        <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Максим">
+        </div>
+
+    <br>
+
+        <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите почту">
+        </div>
+    </div>
+<br>
+
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
     </div>
-<button type="submit">Отправить</button>
+
+    <button type="submit" class="btn">Отправить</button>
 </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
 </body>
 </html>
